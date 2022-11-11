@@ -30,15 +30,15 @@ init();
 
 //create nav dots
 
- function createNavDots() {
-   for (i = 0; i < noImages; i++){
-    const dot = document.createElement("div");
-    dot.classList.add("dot");
-    navDots.appendChild(dot);
-   }
+// function createNavDots() {
+   //for (i = 0; i < noImages; i++){
+    //const dot = document.createElement("div");
+    //dot.classList.add("dot");
+    //navDots.appendChild(dot);
+   //}
 
-   navDots.children[0].classList.add("active");
-   }
+   //navDots.children[0].classList.add("active");
+   //}
  
 //next btn
 
@@ -95,5 +95,5 @@ prevBtn.addEventListener("click", () => {
  //dot events
 
  dot.addEventListener("click", () => {
-    goToSlide(currentSlide);
+    goToSlide(i);
  });
