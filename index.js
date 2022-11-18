@@ -3,7 +3,7 @@ const slideContainer = document.querySelector(".car-image");
 const nextBtn = document.querySelector(".next-arrow .next");
 const prevBtn = document.querySelector(".prev-arrow");
 const navDots = document.querySelector(".dots");
-const dot = document.getElementsByClassName(".dot");
+const dot = document.querySelectorAll(".dot");
 
 let noImages = slideImage.length;
 let slideWidth = slideImage[0].clientWidth;
@@ -93,7 +93,10 @@ prevBtn.addEventListener("click", () => {
  } 
 
  //dot events
+ function dott(){
+  dot.addEventListener("click", () => {
+    goToSlide(1);
+ }); 
+ }
 
- dot.addEventListener("click", () => {
-    goToSlide(i);
- });
+ dott();
